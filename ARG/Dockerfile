@@ -14,5 +14,6 @@ ENV course="devops with AWS" \
     duration="120HRS"
 ARG USERNAME=RAMUGORLA
 ENV USERNAME=$USERNAME
+# 16th line is to make the ARG variables accessible inside the container
 RUN echo "Hello ${USERNAME}" > /tmp/devops.txt
 CMD ["sleep", "100"]
