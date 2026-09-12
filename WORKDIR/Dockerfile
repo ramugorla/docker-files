@@ -5,7 +5,7 @@ RUN mkdir /tmp/work-dir-demo/
 WORKDIR /tmp/work-dir-demo/
 RUN pwd 
 RUN echo "Hello world" > hello.txt
-RUN ls
+#RUN ls  will run during image build time only 
 CMD ["nginx", "-g", "daemon off;"]
 
 
