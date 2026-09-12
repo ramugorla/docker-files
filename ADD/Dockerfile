@@ -7,3 +7,4 @@ ADD sample-1.tar /tmp/
 CMD ["nginx", "-g", "daemon off;"]
 
 # ADD Instruction is similer to COPY Instruction like copies the files into images, but ADD has 2 extra features like ADD will directly downloads the files from internet and also untar the tar files directly into container.
+# when we do download the files from the interet files will not have proper permission so we has to provide permissions.
