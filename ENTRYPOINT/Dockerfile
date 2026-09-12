@@ -6,3 +6,5 @@ FROM almalinux:9
 # For better improovement we can use both instruction together by providing command in ENTRYPOINT and options/default options in CMD instruction means user can override the default options through cmd line at run time
 CMD ["google.com"]
 ENTRYPOINT ["ping"]
+
+# Only one CMD and one ENTRYPOINT is used in one dockerfile
