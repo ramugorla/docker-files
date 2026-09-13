@@ -17,3 +17,6 @@ ENV USERNAME=$USERNAME
 # 16th line is to make the ARG variables accessible inside the container
 RUN echo "Hello ${USERNAME}" > /tmp/devops.txt
 CMD ["sleep", "100"]
+
+# command to override ARG variable values 
+# docker build -f  Dockerfile.version -t arg:1.0.1 --build-arg USERNAME=YADAV .

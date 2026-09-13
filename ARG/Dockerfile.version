@@ -10,3 +10,4 @@ RUN echo "Hello ${USERNAME}, Base OS vesrion is : $version" > /tmp/devops.txt
 CMD ["sleep", "100"]
 
 # ARG instruction can be the 1st instruction when we want to pass or supply the version to the base OS after FROM instruction ARG instrucion will not work.
+
